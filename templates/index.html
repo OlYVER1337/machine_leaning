@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vẽ chữ số</title>
+    <style>
+        canvas {
+            border: 2px solid black;
+            background-color: white;
+        }
+        button {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Vẽ chữ số (0-9)</h2>
+    <canvas id="canvas" width="280" height="280"></canvas><br>
+    <button onclick="clearCanvas()">Xoá</button>
+    <button onclick="predict()">Dự đoán</button>
+    <p id="result">Kết quả: </p>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
